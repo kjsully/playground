@@ -3,9 +3,12 @@ app = Flask(__name__)
 
 
 
-@app.route('/play')
-def play():
-    return render_template("index.html")
+@app.route("/play/<int:num>")
+def play(num):
+    return render_template("index.html", num=num)
+
+
+
 
 
 if __name__=="__main__":
