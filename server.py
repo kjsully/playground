@@ -3,9 +3,9 @@ app = Flask(__name__)
 
 
 
-@app.route("/play/<int:num>")
-def play(num):
-    return render_template("index.html", num=num)
+@app.route("/play/<int:num>/<colors>")
+def play(num, colors):
+    return render_template("index.html", num=num, colors=colors)
 
 
 
