@@ -1,0 +1,16 @@
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
